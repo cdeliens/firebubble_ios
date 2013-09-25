@@ -21,6 +21,9 @@
 		9BB3F9C817F22DF7005F3B8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB3F9AA17F22DF7005F3B8A /* UIKit.framework */; };
 		9BB3F9D017F22DF7005F3B8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3F9CE17F22DF7005F3B8A /* InfoPlist.strings */; };
 		9BB3F9D217F22DF7005F3B8A /* FireBubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3F9D117F22DF7005F3B8A /* FireBubbleTests.m */; };
+		9BB3F9DD17F233AE005F3B8A /* FBTappableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3F9DC17F233AE005F3B8A /* FBTappableView.m */; };
+		9BB3F9DF17F2484E005F3B8A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB3F9DE17F2484E005F3B8A /* AudioToolbox.framework */; };
+		AFB4FEBE4F3347F09EB7E9D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4525F2B0F4CE3AE8BD297 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03EC640CF8214A9189879741 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		9BB3F9A317F22DF7005F3B8A /* FireBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB3F9A617F22DF7005F3B8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BB3F9A817F22DF7005F3B8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,10 @@
 		9BB3F9CD17F22DF7005F3B8A /* FireBubbleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FireBubbleTests-Info.plist"; sourceTree = "<group>"; };
 		9BB3F9CF17F22DF7005F3B8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BB3F9D117F22DF7005F3B8A /* FireBubbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireBubbleTests.m; sourceTree = "<group>"; };
+		9BB3F9DB17F233AE005F3B8A /* FBTappableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTappableView.h; sourceTree = "<group>"; };
+		9BB3F9DC17F233AE005F3B8A /* FBTappableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTappableView.m; sourceTree = "<group>"; };
+		9BB3F9DE17F2484E005F3B8A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CFD4525F2B0F4CE3AE8BD297 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB3F9DF17F2484E005F3B8A /* AudioToolbox.framework in Frameworks */,
 				9BB3F9A917F22DF7005F3B8A /* CoreGraphics.framework in Frameworks */,
 				9BB3F9AB17F22DF7005F3B8A /* UIKit.framework in Frameworks */,
 				9BB3F9A717F22DF7005F3B8A /* Foundation.framework in Frameworks */,
+				AFB4FEBE4F3347F09EB7E9D1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 				9BB3F9CB17F22DF7005F3B8A /* FireBubbleTests */,
 				9BB3F9A517F22DF7005F3B8A /* Frameworks */,
 				9BB3F9A417F22DF7005F3B8A /* Products */,
+				03EC640CF8214A9189879741 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +112,12 @@
 		9BB3F9A517F22DF7005F3B8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BB3F9DE17F2484E005F3B8A /* AudioToolbox.framework */,
 				9BB3F9A617F22DF7005F3B8A /* Foundation.framework */,
 				9BB3F9A817F22DF7005F3B8A /* CoreGraphics.framework */,
 				9BB3F9AA17F22DF7005F3B8A /* UIKit.framework */,
 				9BB3F9C517F22DF7005F3B8A /* XCTest.framework */,
+				CFD4525F2B0F4CE3AE8BD297 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +130,8 @@
 				9BB3F9B817F22DF7005F3B8A /* Main.storyboard */,
 				9BB3F9BB17F22DF7005F3B8A /* FBViewController.h */,
 				9BB3F9BC17F22DF7005F3B8A /* FBViewController.m */,
+				9BB3F9DB17F233AE005F3B8A /* FBTappableView.h */,
+				9BB3F9DC17F233AE005F3B8A /* FBTappableView.m */,
 				9BB3F9BE17F22DF7005F3B8A /* Images.xcassets */,
 				9BB3F9AD17F22DF7005F3B8A /* Supporting Files */,
 			);
@@ -159,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BB3F9D517F22DF7005F3B8A /* Build configuration list for PBXNativeTarget "FireBubble" */;
 			buildPhases = (
+				66A6171E860342DB90388C31 /* Check Pods Manifest.lock */,
 				9BB3F99F17F22DF7005F3B8A /* Sources */,
 				9BB3F9A017F22DF7005F3B8A /* Frameworks */,
 				9BB3F9A117F22DF7005F3B8A /* Resources */,
+				27A82D1FBCF0436AA8BF3F4D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +217,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jose Medrano";
 				TargetAttributes = {
+					9BB3F9A217F22DF7005F3B8A = {
+						DevelopmentTeam = BVKJ72HGK7;
+					};
 					9BB3F9C317F22DF7005F3B8A = {
 						TestTargetID = 9BB3F9A217F22DF7005F3B8A;
 					};
@@ -245,6 +265,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27A82D1FBCF0436AA8BF3F4D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66A6171E860342DB90388C31 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BB3F99F17F22DF7005F3B8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,6 +306,7 @@
 				9BB3F9B717F22DF7005F3B8A /* FBAppDelegate.m in Sources */,
 				9BB3F9B317F22DF7005F3B8A /* main.m in Sources */,
 				9BB3F9BD17F22DF7005F3B8A /* FBViewController.m in Sources */,
+				9BB3F9DD17F233AE005F3B8A /* FBTappableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +372,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Brittain (GH6Z6S2JSL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Brittain (GH6Z6S2JSL)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -355,7 +410,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Scott Brittain (GH6Z6S2JSL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Scott Brittain (GH6Z6S2JSL)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -372,9 +428,11 @@
 		};
 		9BB3F9D617F22DF7005F3B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EC640CF8214A9189879741 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FireBubble/FireBubble-Prefix.pch";
 				INFOPLIST_FILE = "FireBubble/FireBubble-Info.plist";
@@ -385,9 +443,11 @@
 		};
 		9BB3F9D717F22DF7005F3B8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EC640CF8214A9189879741 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FireBubble/FireBubble-Prefix.pch";
 				INFOPLIST_FILE = "FireBubble/FireBubble-Info.plist";
@@ -455,6 +515,7 @@
 				9BB3F9D717F22DF7005F3B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BB3F9D817F22DF7005F3B8A /* Build configuration list for PBXNativeTarget "FireBubbleTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +524,7 @@
 				9BB3F9DA17F22DF7005F3B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

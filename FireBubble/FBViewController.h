@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBTappableView.h"
 
-@interface FBViewController : UIViewController
+@interface FBViewController : UIViewController <FPTappableViewDelegate>
 
 @end

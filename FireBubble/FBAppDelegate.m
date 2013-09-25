@@ -7,12 +7,14 @@
 //
 
 #import "FBAppDelegate.h"
+#import <Firebase/Firebase.h>
 
 @implementation FBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
     return YES;
 }
 							
